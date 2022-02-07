@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poiret+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #232931;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+.container-fluid{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+.container-fluid.main{
+    position: relative; /* To make the navbar positions relative to this container */
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .navbar {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    background-color: rgb(35, 41, 49, 0,2)!important;
+    box-shadow: 0px 1.5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-brand img {
+    height: 1rem;
+  }
+  .navbar-nav li {
+    padding-right: 0.7rem;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #4ecca3;
+    padding-top: 0.8rem;
+  }
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #2d705a;
+  }
+  .navbar-toggler-icon {
+    border-color: #4ecca3;
+    border-radius: 0%;
+    border-color: none;
+  }
+  .navbar-toggler:active{
+      border-color: #4ecca3;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+ 
+  
+  a.nav-link {
+    font-family: 'Poiret One', cursive;
+    color: #4ecca3 !important;
+  }
+  
+  .carousel .background {
+    background-position: center center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  @media (max-width:991px) {
+    .carousel .background {
+      background-size: cover; /* To make the background image looks good */
+    }
+  }
+  
+  .carousel .background.a {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/typewriter.jpg);
+    width: 100vw;
+  }
+  
+ 
+  
+.covertext {
+    position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+    top: 30%; /* The distance between the div with the top of document */
+    left: 0vw; /* Make the div full width */
+    right: 0vw; /* Make the div full width */
+}
+  
+  .title {
+    font-family: 'Poiret One', cursive;   
+    font-weight: 400;
+    font-size: 60px;
+    color: #eeeeee;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-family: 'Poiret One', cursive;
+    font-size: 23px;
+    color: #eeeeee;
+    text-align: center;
+  }
+  
+.explore {
+    text-align: center;
+    margin-top: 20vh;
+}
+.fa-chevron-down{
+    color: #4ecca3;
+}
+  
+/* Current Seciton */
+
+.main-title{
+  padding: 2rem 0rem 3rem 0rem;
+}
+.card{
+  width: 20rem;
+  background-color: #393e46;
+  border-color: #4ecca3;
+  border-width: .1rem;
+  border-radius: 6px ;
+  margin: auto;
+
+}
+.card:hover{
+  box-shadow: 0px 2px 10px rgba(78, 204, 162, 0.596);
+}
+.card-title, .card-text{
+  color: #eeeeee;
+}
+
+
+.btn-outline-light{
+  color: #4ecca3;
+  border-color: #4ecca3;
+}
+.btn-outline-light:hover{
+  background-color: #4ecca3;
+}
+.jumbotron{
+  background-color: #eeeeee;
+  border-radius: 0;
+  width: 100%;
+  padding-top: 5.5rem;
+}
+.lead{
+  font-size: 1.5rem;
+  margin: 5rem;
+}
+.jumbotron-text-content{
+  width: 70vw;
+  margin: auto;
+}
+
+
+/* ####### FOOTER ####### */
+footer {
+    background-color: #393e46;
+    color: #eeeeee;
+    padding: 2rem 0 3rem;
+    margin-top: 4rem;
+    width: 100%;
+  }
+  footer img {
+    height: 4rem;
+    margin: 1.5rem 0;
+  }
+  footer p {
+    color: #eeeeee;
+    font-style: normal !important;
+  }
+  footer strong {
+    color: #4ecca3;
+  }
+  footer a {
+    color: #eeeeee;
+  }
+  .footer-li{
+    list-style-type: none;
+  }
+  
+  
+  hr.socket {
+    width: 100%;
+    border-top: 0.05rem solid #2d705a;
+    margin-top: 1rem;
+  }
+  .fa-facebook-official,
+  .fa-instagram,
+  .fa-pinterest-square {
+    color: #4ecca3;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .fa-facebook-official:hover,
+  .fa-instagram:hover,
+  .fa-pinterest-square:hover {
+    color: #2d705a;
+  }
+  
+  .copyright {
+    color: #4ecca3;
+  }
+
+
+
+ /* ABOUT ME */
+
+ .col-sm-5{
+   height: 100vh;
+   margin: 0;
+   padding: 0 !important;
+ }
+ .col-sm-7{
+   background-color: #393e46;
+   height: 100vh;
+   color: #eeeeee;
+   padding: 1.5rem;
+   text-align: justify;
+   padding-right: 50px;
+ }
+ .col-sm-7 h2{
+   margin: 4rem;
+ 
+ }
+ .col-sm-7 p{
+   color: #eeeeee;
+ }
+.image-box{
+height: 100%;
+}
+.image-about{
+  height: 100vh;
+  object-fit: fill;
+}
+
+.jumbotron-about{
+  margin-bottom: 0;
+}
+/* .col-sm-4{
+  width: 90%;
+background-color: lightgray;
+  padding: 2rem;
+} */
+.col-sm-4{
+  width: 100%;
+ height: 100vh;
+ margin: 0;
+ padding: 0 !important;
+ background-color: lightgray;
+}
+.about-col-4{
+  padding: 10rem 4rem 4rem 4rem!important;
+}
+.about-col-4:hover{
+ background-color: #232931;
+ transition: .5s;
+}
+.about-col-4 h3{
+  color: #4ecca3;
+}
+.about-title-3{
+  color: #4ecca3;
+  margin: 4rem 0rem ;
+}
+.about-text-3{
+  color: #eeeeee;
+  padding: 1.1rem;
+  text-align: justify;
+}
+.col-sm-12{
+  padding: 50px;
+}
+/********** Projects **************/
+
+.col-12 p{
+  color:#232931;
+  width: 60%;
+  padding: 2rem;
+}
+.jumbotron-project{
+  margin-top: 3rem;
+  border-radius: 0;
+  background-color: #eeeeee;
+  color: #232931;
+}
+.jumbotron-project p{
+  color: #232931;
+}
+
+.project-title{
+  margin-top: 1em;
+  color: #eeeeee;
+}
+.project-text{
+  margin: .5rem;
+  color: #eeeeee;
+}
+.video-title{
+  padding-top: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  color: white !important;
+ 
+}
+.card-body{
+  padding: 1rem;
+}
+.card p{
+  color: #eeeeee;
+}
